@@ -1,4 +1,4 @@
-# SOC Homelab & Detection Engineering Portfolio
+# SOC & Detection Engineering Portfolio
 
 <p align="center">
 <b>Blue Team · Threat Detection · SIEM Engineering · Incident Response</b>
