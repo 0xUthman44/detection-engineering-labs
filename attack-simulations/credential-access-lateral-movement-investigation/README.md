@@ -1,4 +1,4 @@
-# Exercise 7: Credential Access & Attempted Lateral Movement Investigation
+#  Credential Access & Attempted Lateral Movement Investigation
 
 ## Scenario
 
