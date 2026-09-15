@@ -200,9 +200,7 @@ Classification: **attempted credential access, reconnaissance, and a suspected b
 
 ---
 
-## Investigation Conclusion
 
-Unlike the first attempt at this exercise, every host in this rebuild held a consistent identity throughout — one Windows endpoint, one Ubuntu server, one external source IP — which made it possible to build a genuine end-to-end narrative instead of documenting disconnected fragments. The evidence supports a real sequence: discovery, external scanning, a failed brute-force attempt, and a suspicious but unconfirmed follow-on toward the Windows endpoint. The investigation stopped short of calling it confirmed lateral movement for one reason: the telemetry that would prove it — a source IP on the Windows-side SMB/logon events — simply wasn't there. That gap, not a guess, is the honest ending to this report.
 
 ## Learning Outcomes
 
