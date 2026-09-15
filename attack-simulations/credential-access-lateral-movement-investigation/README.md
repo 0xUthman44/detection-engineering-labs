@@ -2,19 +2,19 @@
 
 ## Scenario
 
-On the night of September 14–15, 2026, Wazuh flagged a sequence of discovery activity on a monitored Windows 10 endpoint, followed within hours by an external port scan and a brute-force SSH attack against the Ubuntu server, and — in the minutes that followed the failed SSH attempts — a spike in SMB-port network connections and authentication failures back on the Windows endpoint.
+ Wazuh flagged a sequence of discovery activity on a monitored Windows 10 endpoint, followed within hours by an external port scan and a brute-force SSH attack against the Ubuntu server, and — in the minutes that followed the failed SSH attempts — a spike in SMB-port network connections and authentication failures back on the Windows endpoint.
 
-The investigation set out to determine whether these were three unrelated events or a single actor working through a discovery → external recon → credential-access → attempted-pivot sequence. The telemetry was pulled together from Sysmon, Wazuh threat hunting, Windows Security events, and Ubuntu's own authentication log, and the conclusion below is built strictly from what that telemetry shows — not from what the shape of the timeline suggests.
+The investigation set out to determine whether these were three unrelated events or a single actor working through a discovery → external recon → credential-access → attempted-pivot sequence. The telemetry was pulled together from Sysmon, Wazuh threat hunting, Windows Security events, and Ubuntu's own authentication log, and the conclusion below is built strictly from what that telemetry shows.
 
 ---
 
 ## Environment
 
-| Host | Wazuh Agent Name | Agent ID | IP | Role |
+| Host | Wazuh Agent Name  | IP | Role |
 |---|---|---|---|---|
-| Windows 10 workstation | WIN10-ENDPOINT | 001 | 192.168.56.101 | Monitored endpoint — source of discovery activity, later target of SMB/logon-failure activity |
-| Ubuntu server | UBUNTU-SURICATA | — | 192.168.56.102 | Target of Nmap scan and SSH brute-force attempts |
-| External host | — (unmonitored) | — | 192.168.56.103 | Source of the Nmap scan and SSH brute-force attempts |
+| Windows 10 workstation | WIN10-ENDPOINT | 192.168.56.101 | Monitored endpoint — source of discovery activity, later target of SMB/logon-failure activity |
+| Ubuntu server | UBUNTU-SURICATA | 192.168.56.102 | Target of Nmap scan and SSH brute-force attempts |
+| External host | — (unmonitored) | 192.168.56.103 | Source of the Nmap scan and SSH brute-force attempts |
 
 **Host identity note:** Wazuh displays the Windows endpoint under the agent name **WIN10-ENDPOINT**, while its local Windows computer name — visible in some process-context fields as `DESKTOP-TEDQ8NH\SOC` — is the same physical machine. Likewise, the Ubuntu server's shell prompt shows its local hostname as `ubuntu-soc`, while Wazuh's threat-hunting view lists it under the agent name **UBUNTU-SURICATA** — again, one and the same host. Both are treated as single, consistent assets throughout this write-up.
 
