@@ -5,7 +5,7 @@
 
 ## Professional Overview
 
-This portfolio demonstrates practical, demonstrable competence across the core SOC analyst wazuh skill set:
+This portfolio demonstrates practical, demonstrable competence using wazuh as the SIEM:
 
 * Alert triage and log analysis
 * SIEM investigation and threat hunting (Wazuh)
