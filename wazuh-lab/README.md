@@ -154,20 +154,4 @@ Every investigation and lab-setup document includes inline, annotated screenshot
 
 ---
 
-## Roadmap
 
-* Active Directory lab expansion (Kerberoasting, confirmed lateral movement, AD-based privilege escalation)
-* C2 beacon and credential-dumping detection scenarios
-* Log tampering / defense evasion investigations
-* Custom Wazuh detection rules for techniques already demonstrated in this lab
-
-Full roadmap: [`docs/roadmap.md`](docs/roadmap.md)
-
----
-
-## Contact
-
-* **LinkedIn:** [linkedin.com/in/uthman-hammed](https://linkedin.com/in/uthman-hammed)
-* **Email:** hammeduthman90@gmail.com
-
-Open to SOC Analyst, Detection Engineering, and Blue Team opportunities.
