@@ -2,33 +2,10 @@
 
 [← Back to Detection Engineering Labs](../README.md)
 
-<p align="center">
-<b>Blue Team · Threat Detection · SIEM Engineering · Incident Response</b>
-</p>
-
-<p align="center">
-<img alt="Focus" src="https://img.shields.io/badge/Focus-SOC%20Analyst%20%7C%20Detection%20Engineering-blue">
-<img alt="SIEM" src="https://img.shields.io/badge/SIEM-Wazuh-005571">
-<img alt="IDS" src="https://img.shields.io/badge/IDS-Suricata-orange">
-<img alt="Telemetry" src="https://img.shields.io/badge/Endpoint%20Telemetry-Sysmon-informational">
-<img alt="Certification" src="https://img.shields.io/badge/Certification-CompTIA%20Security%2B-red">
-</p>
-
----
-
-## Introduction
-
-I'm Uthman, a cybersecurity practitioner building toward a SOC Analyst / Detection Engineering role, with a focus on defensive security, log analysis, and incident investigation. This lab is a hands-on homelab portfolio documenting structured, end-to-end blue team work: attack simulations executed against a purpose-built lab, the telemetry they generate, and the SOC-style investigations performed to detect, analyze, and respond to that activity.
-
-Every project here is built to mirror the workflows of a functioning SOC rather than a simple tutorial replication — each investigation moves from **simulated attacker activity → telemetry generation → detection → threat hunting → analyst assessment → MITRE ATT&CK mapping → defensive recommendations**, the same lifecycle used in production security operations.
-
-**Certification:** CompTIA Security+
-
----
 
 ## Professional Overview
 
-This portfolio demonstrates practical, demonstrable competence across the core SOC analyst skill set:
+This portfolio demonstrates practical, demonstrable competence across the core SOC analyst wazuh skill set:
 
 * Alert triage and log analysis
 * SIEM investigation and threat hunting (Wazuh)
