@@ -22,6 +22,10 @@ This page consolidates the MITRE ATT&CK techniques explicitly mapped within the 
 | Persistence | T1547.001 – Registry Run Keys / Startup Folder | [Windows Persistence Mechanisms Investigation](../attack-simulations/windows-persistence-detection.md) |
 | Persistence | T1053.005 – Scheduled Task | [Windows Persistence Mechanisms Investigation](../attack-simulations/windows-persistence-detection.md) |
 | Persistence | T1543.003 – Windows Service | [Windows Persistence Mechanisms Investigation](../attack-simulations/windows-persistence-detection.md) |
+| Discovery | T1069 – Permission Groups Discovery | [Credential Access & Suspected Lateral Movement Investigation](../attack-simulations/credential-access-lateral-movement-investigation/README.md) |
+| Discovery | T1016 – System Network Configuration Discovery | [Credential Access & Suspected Lateral Movement Investigation](../attack-simulations/credential-access-lateral-movement-investigation/README.md) |
+| Discovery | T1046 – Network Service Discovery | [Credential Access & Suspected Lateral Movement Investigation](../attack-simulations/credential-access-lateral-movement-investigation/README.md) |
+| Credential Access | T1110.001 – Brute Force: Password Guessing | [Credential Access & Suspected Lateral Movement Investigation](../attack-simulations/credential-access-lateral-movement-investigation/README.md) |
 
 ---
 
@@ -35,6 +39,7 @@ This page consolidates the MITRE ATT&CK techniques explicitly mapped within the 
 | [SSH Brute Force Detection](../attack-simulations/ssh-bruteforce-detection.md) | Credential Access, Initial Access |
 | [Windows Endpoint Activity Investigation with Sysmon](../attack-simulations/windows-endpoint-activity-investigation-sysmon.md) | Discovery, Execution |
 | [Windows Persistence Mechanisms Investigation](../attack-simulations/windows-persistence-detection.md) | Persistence |
+| [Credential Access & Suspected Lateral Movement Investigation](../attack-simulations/credential-access-lateral-movement-investigation/README.md) | Discovery, Credential Access, Execution (PowerShell as the discovery vector); Windows-side pivot attempt documented as temporal correlation only, not confirmed lateral movement |
 
 ---
 
@@ -42,7 +47,7 @@ This page consolidates the MITRE ATT&CK techniques explicitly mapped within the 
 
 The following tactics are not yet represented in this portfolio and are tracked in the [Roadmap](roadmap.md):
 
-* **Lateral Movement** — planned Active Directory lab expansion
+* **Lateral Movement** — no confirmed lateral movement is demonstrated yet. The multi-host investigation documents a suspected pivot attempt (SMB-port activity and logon failures) that could not be source-attributed, so it is deliberately not counted as coverage. Confirmed lateral movement is planned with the Active Directory lab expansion
 * **Privilege Escalation** — planned local/AD privilege escalation scenarios
 * **Defense Evasion** — planned log tampering / detection evasion investigations
 * **Command and Control** — planned C2 beacon detection exercise
